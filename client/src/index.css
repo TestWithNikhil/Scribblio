@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #28243d;
+  background: #fffaf4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fffaf4 0%, #fffaf4 100%);
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero-glow-a {
+  top: 40px;
+  left: 80px;
+  height: 240px;
+  width: 240px;
+  background: rgba(118, 87, 232, 0.14);
+}
+
+.hero-glow-b {
+  right: 150px;
+  top: 160px;
+  height: 220px;
+  width: 220px;
+  background: rgba(97, 184, 255, 0.15);
+}
+
+.hero-glow-c {
+  left: 45%;
+  bottom: 80px;
+  height: 200px;
+  width: 200px;
+  background: rgba(84, 214, 178, 0.16);
+}
+
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(118, 87, 232, 0.12);
+}
